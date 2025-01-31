@@ -1,0 +1,206 @@
+body{
+    font-family: 'DM Sans', serif;
+    background-color: white;
+    font-weight: 500;
+    padding: 25px 100px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.corpo-principal{
+    min-height: 90vh;
+    min-width: 1200px;
+    max-width: 1200px;
+    display: grid;
+    grid-template-areas:
+    "create-post reviews reviews schedule"
+    "create-post reviews reviews schedule"
+    "create-post multiple-accounts consistent-posting schedule"
+    "create-post multiple-accounts non-stop-content non-stop-content" ;
+    grid-template-columns: 22% 28% 25% 25%;
+    grid-template-rows: 20% 20% 30% 30%;
+}
+.create-post-write-content{
+    grid-area: create-post;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.create-and-schedule{
+    background-color: var(--yellow100);
+    height: 50%;
+    width: 100%;
+    padding: 70px 30px;
+    margin: 35px 35px 35px 35px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.create-and-schedule h2{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1;
+}
+.create-and-schedule span{
+    font-style: italic;
+    color: var(--purple500);
+}
+.create-and-schedule img{
+    width: 80%;
+}
+.write-content{
+    background-color: var(--yellow500);
+    width: 100%;
+    height: 50%;
+    margin: 0 35px 35px 35px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+    border-radius: 20px;
+}
+.write-content h2{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1;
+}
+.write-content img{
+    margin-top: 50px;
+}
+.reviews{
+    grid-area: reviews;
+    background-color: var(--purple500);
+    margin: 35px 35px 35px 35px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.reviews h2, p{
+    color: white;
+}
+.reviews h2{
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 1;
+}
+.reviews span{
+    color: var(--yellow500);
+}
+.reviews .bot{
+    margin-bottom: 20px;
+}
+.reviews img{
+    width: 35%;
+}
+.reviews p{
+    font-size: 20px;
+    line-height: 2.1;
+}
+.schedule{
+    grid-area: schedule;
+    background-color: var(--purple100);
+    margin: 35px 35px 35px 0;
+    padding: 50px 0 50px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-height: 697px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.schedule h2{
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1;
+}
+.schedule img{
+    height: 65%;
+    width: 18vw;
+}
+.schedule p{
+    color: black;
+    font-size: 18px;
+    padding-right: 30px;
+}
+.multiple-accounts{
+    grid-area: multiple-accounts;
+    margin: 0 35px 35px 35px;
+    width: 266px;
+    height: 536px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.multiple-accounts .instagram{
+    width: 15.5vw;
+}
+.multiple-accounts .manage{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1;
+    margin-top: 18px;
+    margin-bottom: 65px;
+}
+.multiple-accounts .percentage{
+    font-size: 62px;
+    font-weight: 500;
+}
+.multiple-accounts p{
+    font-size: 19px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 40px;
+}
+.multiple-accounts .audience{
+    width: 8vw;
+}
+.consistent-posting{
+    grid-area: consistent-posting;
+    background-color: var(--yellow500);
+    margin: 0 35px 35px 0;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 265px;
+    border-radius: 20px;
+}
+.consistent-posting h2{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 18px;
+}
+.consistent-posting img{
+    width: 10vw;
+}
+.non-stop-content{
+    grid-area: non-stop-content;
+    background-color: var(--purple500);
+    margin: 0 35px 35px 0;
+    padding: 20px;
+    width: 565px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+}
+.non-stop-content img{
+    width: 11vw;
+}
+.non-stop-content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+    line-height: 1;
+}
